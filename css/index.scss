@@ -1,0 +1,35 @@
+main{
+    margin: 60px 0;
+}
+
+.sidebar{
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-right: 30px;
+    width: 40%;
+    .topic{
+        &:not(.active){
+            cursor: pointer;
+        }
+    }
+}
+
+.code_block {
+    margin-top: 16px;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 20px 20px 20px;
+    position: relative;
+    margin-bottom: 20px;
+    max-width: calc(100vw - 400px);
+    overflow: auto;
+    pre{
+        font-family: monospace;
+        white-space: pre-line;
+    }
+    code {
+        font-family: monospace;
+        white-space: pre;
+        color: #fff;
+    }
+}

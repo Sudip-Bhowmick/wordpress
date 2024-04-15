@@ -1,1 +1,46 @@
-WordPress
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress PHP Codes</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="d_f">
+                <div class="sidebar">
+                    <div class="all_topics">
+                        <div class="topic active">ACF (Advanced Custom Fields)</div>
+                    </div>
+                </div>
+
+                <div class="main_content">
+                    <h3>ACF (Advanced Custom Fields)</h3>
+                    <img src="/img/acf/type-text.png" class="img-responsive">
+
+                    <div class="code_block">
+                        <pre>
+<code>
+&lt;?php if( get_field('type_text') ): ?&gt;
+    &lt;div&gt;&lt;?php the_field('type_text'); ?>&lt;/div&gt;
+&lt;?php endif; ?&gt;
+</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
